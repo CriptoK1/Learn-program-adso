@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+<script>
+    var usuario="sena"
+    var contraseña="ADSO"
+
+    alert ('inicio se sesion')
+     var us = prompt('ingrese usuario')
+     if(us === usuario) {
+         alert('el usuario es correcto')
+
+    
+     var cont = prompt('ingrese contraseña')
+        if(cont ===contraseña) {
+         alert('La contraseña es correcta')
+       
+    operacion = prompt('¿Que operacion desea realizar :)?')
+    var n1
+    var n2
+    n1 = prompt('ingrese primer número')
+    n2 = prompt('Ingrese segundo número')
+    var suma = parseInt (n1) + parseInt(n2)  
+    var resta = parseInt (n1) - parseInt(n2)
+    var multiplicacion = (n1) * (n2)
+    var division = parseInt (n1) / parseInt(n2)
+
+
+    if (operacion==='suma'){
+    document.write("el resultado de "+n1+" mas "+n2+" es = "+suma)
+    }
+    else if (operacion==='resta'){
+    document.write("el resultado de "+n1+" menos "+n2+" es = "+resta)
+    }
+    else if(operacion==='multiplicacion'){
+    document.write("el resultado de "+n1+" por "+n2+" es = "+multiplicacion)
+    }
+    else if(operacion==='division'){
+    document.write("el resultado de "+n1+" dividido "+n2+" es igual a "+division)
+    }
+
+      } else {
+                alert('Error en la contraseña.')
+            }
+        } else {
+            alert('Error en el usuario.')
+        }
+     
+</script>
+</body>
+</html>
