@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the dumb number c:</title>
+</head>
+<body>
+    <script lang="JavaScript">
+        var contador=1
+        var random=Math.floor(Math.random()*100)
+        alert ('Adivina un numero del 1 al 100, el numero random es ' +random)
+        while (contador<=10){
+            let correcto=parseInt(prompt('intento ' + contador))
+            if (correcto===random){
+                document.write('Felicidades lo lograste en ' +contador+ ' intentos y el numero eleatorio era ' +random+ ' ;D ')
+                break
+            }
+            else if (contador===10){
+                document.write('no tienes mas intentos')
+                break
+            }
+            contador++
+        }
+    </script>
+</body>
+</html>
